@@ -72,9 +72,9 @@ function morePictures(){
 
     var picture = str.shuffleSlice();
 
-    var picturelink = "http://i.imgur.com/' + picture + '.png";
+    var picturelink = "https://i.imgur.com/' + picture + '.png";
 
-    document.getElementById('container').innerHTML += '<img onclick="ShowFullPageImage(this);" onload="if(this.width==\'161\'&&this.height==\'81\'){ this.parentNode.removeChild(this)};" id="'+picture+'" src="http://i.imgur.com/' + picture + '.jpg" title="'+(timesRan+1)+'.'+(i+1)+' : '+picture+'" class="thumbnail-image">';
+    document.getElementById('container').innerHTML += '<img onclick="ShowFullPageImage(this);" onload="if(this.width==\'161\'&&this.height==\'81\'){ this.parentNode.removeChild(this)};" id="'+picture+'" src="https://i.imgur.com/' + picture + '.jpg" title="'+(timesRan+1)+'.'+(i+1)+' : '+picture+'" class="thumbnail-image">';
 
   };
 
