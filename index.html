@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hình Ảnh Reddit Randum</title>
+
+	<!-- my css -->
+	<link href="css/index.css" rel="stylesheet">
+
+</head>
+
+<body  style="background: #121211">
+
+
+	<div id="warning-popup">
+
+			<div id="warning">
+
+				<h1><u>CẢNH BÁO! Tiếp Tục Với Rủi Ro!</u></h1>
+
+				<h3>Trang này hiện tất cả những hình ảnh ngẫu nhiên trên mạng.<br> Tất cả mọi thứ sẽ ở đây...</h3>
+				<br>
+				<h3>Và... bao gồm cả nsfw, máu me, etc...</h3>
+				<br>
+
+				<div id="continue_button" onclick="hideWarning(); morePictures();"><i>Tôi Hiểu Và Muốn Tiếp Tục!</i></div>
+
+			</div>
+
+	</div>
+
+	<div id="big-image" onclick="HideFullPageImage();">
+
+		<div id="big-picture-container"></div>
+
+	</div>
+
+	<div id="about" onclick="CloseAbout();">
+
+		<div id="about-text-container">
+
+			<div>Bản Quyền Thuộc Về<br>Nutdel Page<br>Đừng Chửi Tui :))</div>
+
+		</div>
+
+	</div>
+
+	<div id="top-bar">
+
+		<div id="more-button" onclick='morePictures();' title="duh">Thêm!</div>
+
+		<div id="refresh-button"  onclick="location.reload();" title="or you could just press F5, y'know">Tải Lại</div>
+
+		<div id="about-button" onclick="OpenAbout();" title="please">Thông Tin</div>
+
+		<i id="settings-button" class="fa fa-cog" onclick="if(document.getElementById('settings-popup').style.top == '-15px'){document.getElementById('settings-popup').style.top = '39px'}else{document.getElementById('settings-popup').style.top = '-15px'};
+
+			if(this.style.background == 'rgb(31, 31, 31)'){this.style.background = ''; this.style.boxShadow = '';}else{this.style.background = '#1F1F1F'; this.style.boxShadow = '1px 0px 1px #121212 inset';};"></i>
+
+	</div>
+
+	<div id="settings-popup" style="top: -15px;">
+
+		<div id="image-loader-input">
+
+			hình ảnh đã tải:
+
+			<input id="input" type="text" value="50" size="4" onchange="document.cookie='images='+this.value;" onkeyup="this.onchange();"></input>
+
+		</div>
+
+	</div>
+
+	<div id="container" style=""></div>
+
+	<div>
+
+		<div id="moreButton" style="padding-left: 10px; padding-right: 10px; padding-top: 5px; padding-bottom: 5px; text-align: center; bottom: 0px; right: 0px; position: fixed;" onclick='morePictures();'><a>more</a></div>
+
+	</div>
+
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<!-- my js -->
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>
